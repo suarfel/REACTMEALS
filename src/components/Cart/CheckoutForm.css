@@ -1,0 +1,70 @@
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    max-height:18rem ;
+    overflow: auto;
+      
+}
+.control {
+margin: 0.5rem 0rem;
+}
+.control  label{
+     display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    }
+.control input{
+     width: 50%;
+    }
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:1;
+    text-align: right;
+    
+}
+.buttons button{
+    font: inherit;
+    cursor: pointer;
+    background-color:  #8a2b06;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-right:1rem;
+    color: white;
+  
+  
+}
+/* .buttons button:hover,
+.buttons button:active {
+  background-color: #5a1a01;
+  border-color: #5a1a01; */
+ 
+/* } */
+
+.error-text{
+    color: red;
+    font-size: small;
+     
+}
+.control-invalid  label{
+    display: block;
+   font-weight: bold;
+   color: rgb(140, 116, 116);
+   margin-bottom: 0.5rem;
+   }
+.control-invalid input{
+    display: block;
+    border-color: red;
+    background-color: rgba(232, 90, 90, 0.25);
+    width: 50%;
+}
+.buttons button:disabled,
+.buttons button:disabled:hover,
+.buttons button:disabled:active {
+  background-color: #ccc;
+  color: rgb(36, 34, 34);
+  border-color: #ccc;
+  cursor: not-allowed;
+}
